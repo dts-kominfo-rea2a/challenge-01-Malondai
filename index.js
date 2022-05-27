@@ -1,11 +1,53 @@
 // TODO: Buatlah data dari kedua user di sini
 // Tentukan tipe data dan struktur data yang menurut kalian tepat
 // Kalian bisa membuat variabel lain untuk dimasukkan ke dalam atribut user agar lebih mudah dibaca
-const firstUser = {};
-const secondUser = {};
+
+/* set helper variable */
+let firstUserFavColor = new Set(['Yellow', 'Pink', 'White', 'Purple']) // first user set of favorit colors
+let secondUserFavColor = new Set(['Blue', 'Black', 'Grey']) // second user set of favorit calor
+
+/* variable for users education */
+let firstUsersEducation = [
+    { name: 'SD 01', city: 'Jakarta', graduate: '2016' },
+    { name: 'SMP 02', city: 'Jakarta', graduate: '2019' },
+    { name: 'SMA 03', city: 'Tangerang' }
+]
+
+let secondUsersEducation = [
+    { name: 'SD 02', city: 'Jakarta', graduate: '2010' },
+    { name: 'SMP 03', city: 'Bogor', graduate: '2013' },
+    { name: 'SMA 01', city: 'Surabaya', graduate: '2016' },
+    { name: 'Universitas Maju,', city: 'Tangerang' }
+]
+
+/* variable for users favorite restaurant */
+let firsUserFavResto = new Set(['Bento', 'Sushi', 'Pancake', 'Eggy', 'Tempura', 'Bento', 'Eggy', 'Padang', 'Tteok', 'Sushi', 'Sushi'])
+let secondUserFavResto = new Set(['Tempura', 'Bento', 'Sushi', 'Pancake', 'Padang', 'Katsu', 'Geprek', 'Pancake', 'Eggy'])
+
+/* set constant file */
+const firstUser = {
+    name: 'Monica',
+    gender: 'Female',
+    age: 17,
+    email: 'monica@dingdong.com',
+    favoriteColor: firstUserFavColor,
+    isHavePet: 'Yes',
+    education: firstUsersEducation,
+    favoriteRestaurant: firsUserFavResto
+};
+const secondUser = {
+    name: 'Wendy',
+    gender: 'Male',
+    age: 23,
+    email: 'wendy@dingdong.com',
+    favoriteColor: secondUserFavColor,
+    isHavePet: 'No',
+    education: secondUsersEducation,
+    favoriteRestaurant: secondUserFavResto
+};
 
 // TODO: Masukkan hasil akhir dari kedua user di sini
-const users = [];
+const users = [firstUser, secondUser];
 
 // ! JANGAN MODIFIKASI LINE DI BAWAH
 function main() {
